@@ -43,6 +43,7 @@ fetch_products = (operators, callback) ->
                     return
                 else if products_ul is null
                     console.log "done fetch "+operators[index]['title']+"'s products!"
+                    console.log "current fetched product length is".products.length
                     pageno=1
                     index++
                     previousGrap = true
@@ -61,6 +62,7 @@ fetch_products = (operators, callback) ->
                     console.log "done fetching"
                 else if products.length < page_size
                     console.log "done fetch "+operators[index]['title']+"'s products!"
+                    console.log "current fetched product length is".products.length
                     pageno=1
                     index++
                     console.log "begin fetch "+operators[index]['title']+"'s products!"
