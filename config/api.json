@@ -1,0 +1,16 @@
+{
+    "comment" :
+    {
+        "taobao":
+        {
+            "store_id" : "867510228",
+            "fetch_url" : "http://rate.taobao.com/detail_rate.htm?showContent=1&ismore=1&siteID=2",
+            "page_size" : 20
+        },
+        "dianping":
+        {
+            "fetch_url" : "http://www.dianping.com/shop/",
+            "page_size" : 20
+        }
+    }
+}
