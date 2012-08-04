@@ -68,7 +68,7 @@
           return;
         } else if (products_ul === null) {
           console.log("done fetch " + operators[index]['title'] + "'s products!");
-          console.log("current fetched product length is".products.length);
+          console.log("current fetched product length is" + products.length);
           pageno = 1;
           index++;
           previousGrap = true;
@@ -84,13 +84,13 @@
           products.push(product);
         }
         pageno++;
-        if (products.length < page_size && index === operators.length - 1) {
+        if (products_ul.length < page_size && index === operators.length - 1) {
           clearInterval(intervalId);
           callback(null, products);
           console.log("done fetching");
-        } else if (products.length < page_size) {
+        } else if (products_ul.length < page_size) {
           console.log("done fetch " + operators[index]['title'] + "'s products!");
-          console.log("current fetched product length is".products.length);
+          console.log("current fetched product length is" + products.length);
           pageno = 1;
           index++;
           console.log("begin fetch " + operators[index]['title'] + "'s products!");
